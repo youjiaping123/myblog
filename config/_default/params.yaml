@@ -1,0 +1,37 @@
+description: 使用 Hugo 和 Hextra 构建的个人知识库与博客。
+externalLinkDecoration: true
+
+navbar:
+  displayTitle: true
+  displayLogo: true
+  logo:
+    path: images/logo.svg
+    dark: images/logo-dark.svg
+  width: normal
+
+theme:
+  default: system
+  displayToggle: true
+
+footer:
+  enable: true
+  displayCopyright: true
+  displayPoweredBy: true
+  width: normal
+
+displayUpdatedDate: true
+dateFormat: '2006-01-02'
+
+search:
+  enable: false
+
+highlight:
+  copy:
+    enable: true
+    display: hover
+
+page:
+  width: normal
+
+toc:
+  displayTags: true

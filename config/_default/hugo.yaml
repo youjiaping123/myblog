@@ -1,0 +1,43 @@
+baseURL: https://blog.zeven.com/
+title: Zeven Blog
+theme: hextra
+
+defaultContentLanguage: zh-cn
+defaultContentLanguageInSubdir: false
+hasCJKLanguage: true
+enableRobotsTXT: true
+timeZone: Asia/Shanghai
+summaryLength: 120
+
+pagination:
+  pagerSize: 10
+
+frontmatter:
+  format: yaml
+  # 自动日期填充：优先读取 front matter，没有时使用文件修改时间。
+  date:
+    - date
+    - :fileModTime
+  lastmod:
+    - lastmod
+    - :fileModTime
+
+cascade:
+  - isCJKLanguage: true
+    target:
+      sites:
+        matrix:
+          languages:
+            - zh-cn
+
+privacy:
+  vimeo:
+    enableDNT: true
+  x:
+    enableDNT: true
+  youTube:
+    privacyEnhanced: true
+
+services:
+  x:
+    disableInlineCSS: true
